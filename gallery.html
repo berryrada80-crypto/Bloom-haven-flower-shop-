@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bloom Haven Flower Shop - Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            background:linear-gradient(
+                135deg,
+                #F6E2BF,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA
+            );
+
+            font-family:Arial,sans-serif;
+            margin:0;
+        }
+
+
+        /* ========================= */
+        /* NAVIGATION */
+        /* ========================= */
+
+        nav{
+            background:linear-gradient(
+                90deg,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA,
+                #F6E2BF
+            );
+
+            padding:18px 10px;
+            text-align:center;
+
+            box-shadow:
+                0 4px 12px
+                rgba(0,0,0,0.15);
+        }
+
+
+        nav a{
+            display:inline-block;
+
+            color:#6B5260;
+
+            text-decoration:none;
+
+            font-size:17px;
+            font-weight:bold;
+
+            margin:5px 8px;
+            padding:11px 20px;
+
+            border-radius:25px;
+
+            transition:0.4s;
+        }
+
+
+        nav a:hover{
+            background:#FFF9F5;
+
+            color:#EB9F91;
+
+            transform:translateY(-3px);
+
+            box-shadow:
+                0 5px 10px
+                rgba(0,0,0,0.15);
+        }
+
+
+        /* ========================= */
+        /* TITLE */
+        /* ========================= */
+
+        h1{
+            text-align:center;
+
+            color:#C86B7C;
+
+            font-size:40px;
+
+            text-shadow:
+                2px 2px 5px #F6C9CB;
+        }
+
+
+        .intro{
+            text-align:center;
+
+            color:#6B5A67;
+
+            font-size:18px;
+
+            padding:0 15px;
+        }
+
+
+        /* ========================= */
+        /* GALLERY */
+        /* ========================= */
+
+        .gallery-table{
+
+            width:90%;
+
+            max-width:1200px;
+
+            margin:35px auto;
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(6, 1fr);
+
+            gap:25px;
+
+            justify-content:center;
+        }
+
+
+        /* ========================= */
+        /* FLOWER CARD */
+        /* ========================= */
+
+        .flower-card{
+
+            grid-column:span 2;
+
+            height:430px;
+
+            box-sizing:border-box;
+
+            background:linear-gradient(
+                135deg,
+                #FFF9F5,
+                #F6E2BF,
+                #F6C9CB
+            );
+
+            border:3px solid #BEEAFA;
+
+            border-radius:28px;
+
+            padding:15px;
+
+            text-align:center;
+
+            box-shadow:
+                0 6px 15px
+                rgba(0,0,0,.15);
+
+            transition:0.4s;
+
+            overflow:hidden;
+
+            position:relative;
+        }
+
+
+        /* ========================= */
+        /* DECORATIVE CURVED LINE */
+        /* ========================= */
+
+        .flower-card::before{
+
+            content:"";
+
+            position:absolute;
+
+            top:7px;
+            left:7px;
+            right:7px;
+            bottom:7px;
+
+            border:2px solid #EB9F91;
+
+            border-radius:23px;
+
+            pointer-events:none;
+
+            opacity:.75;
+        }
+
+
+        .flower-card::after{
+
+            content:"✿";
+
+            position:absolute;
+
+            top:10px;
+            right:15px;
+
+            color:#C86B7C;
+
+            font-size:18px;
+
+            opacity:.8;
+        }
+
+
+        .flower-card:hover{
+
+            transform:
+                translateY(-8px)
+                scale(1.03);
+
+            border:3px solid #EB9F91;
+
+            box-shadow:
+                0 10px 20px
+                rgba(235,159,145,.4);
+        }
+
+
+        /* ========================= */
+        /* FLOWER PICTURES */
+        /* ========================= */
+
+        .flower-card img{
+
+            width:100%;
+
+            height:220px;
+
+            object-fit:cover;
+
+            border-radius:20px;
+
+            display:block;
+
+            position:relative;
+
+            z-index:1;
+        }
+
+
+        /* ========================= */
+        /* FLOWER NAME */
+        /* ========================= */
+
+        .flower-card h4{
+
+            color:#C86B7C;
+
+            margin:15px 0 8px;
+
+            font-size:19px;
+
+            height:25px;
+
+            position:relative;
+
+            z-index:1;
+        }
+
+
+        /* ========================= */
+        /* DESCRIPTION */
+        /* ========================= */
+
+        .flower-card p{
+
+            color:#6B5A67;
+
+            font-size:15px;
+
+            line-height:22px;
+
+            height:66px;
+
+            margin:8px 0;
+
+            display:flex;
+
+            align-items:flex-start;
+
+            justify-content:center;
+
+            position:relative;
+
+            z-index:1;
+        }
+
+
+        /* ========================= */
+        /* CENTER LAST 2 CARDS */
+        /* ========================= */
+
+        .flower-card:nth-child(7){
+
+            grid-column:2 / span 2;
+        }
+
+
+        .flower-card:nth-child(8){
+
+            grid-column:4 / span 2;
+        }
+
+
+        /* ========================= */
+        /* VIDEO SECTION */
+        /* ========================= */
+
+        .video-section{
+
+            width:85%;
+
+            max-width:1000px;
+
+            margin:50px auto;
+
+            padding:30px;
+
+            box-sizing:border-box;
+
+            text-align:center;
+
+            background:linear-gradient(
+                135deg,
+                #FFF9F5,
+                #DEC8D0,
+                #BEEAFA
+            );
+
+            border:3px solid #EB9F91;
+
+            border-radius:28px;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.15);
+        }
+
+
+        .video-section h2{
+
+            color:#9B6AA7;
+
+            font-size:30px;
+
+            margin-top:0;
+        }
+
+
+        .video-section p{
+
+            color:#6B5A67;
+
+            font-size:17px;
+
+            line-height:25px;
+        }
+
+
+        /* ========================= */
+        /* VIDEO */
+        /* ========================= */
+
+        .video-container{
+
+            width:100%;
+
+            display:flex;
+
+            justify-content:center;
+
+            margin-top:20px;
+        }
+
+
+        .video-container iframe{
+
+            width:80%;
+
+            max-width:800px;
+
+            height:400px;
+
+            border:none;
+
+            border-radius:20px;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.2);
+        }
+
+
+        /* ========================= */
+        /* FOOTER */
+        /* ========================= */
+
+        footer{
+
+            text-align:center;
+
+            margin-top:40px;
+
+            padding:20px;
+
+            background:linear-gradient(
+                90deg,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA
+            );
+
+            color:#6B5260;
+
+            font-size:14px;
+
+            border-top:
+                3px solid #EB9F91;
+
+            box-shadow:
+                0 -4px 12px
+                rgba(0,0,0,.12);
+        }
+
+
+        /* ========================= */
+        /* PHONE */
+        /* ========================= */
+
+        @media screen and (max-width:700px){
+
+            nav a{
+
+                font-size:13px;
+
+                padding:9px 11px;
+
+                margin:3px;
+            }
+
+
+            .gallery-table{
+
+                width:94%;
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap:15px;
+            }
+
+
+            .flower-card{
+
+                grid-column:span 1;
+
+                height:350px;
+
+                padding:8px;
+
+                border-radius:22px;
+            }
+
+
+            .flower-card::before{
+
+                border-radius:18px;
+            }
+
+
+            .flower-card:nth-child(7),
+            .flower-card:nth-child(8){
+
+                grid-column:span 1;
+            }
+
+
+            .flower-card img{
+
+                height:150px;
+
+                border-radius:15px;
+            }
+
+
+            .flower-card h4{
+
+                font-size:16px;
+
+                height:20px;
+            }
+
+
+            .flower-card p{
+
+                font-size:12px;
+
+                line-height:17px;
+
+                height:50px;
+            }
+
+
+            h1{
+
+                font-size:30px;
+            }
+
+
+            .intro{
+
+                font-size:15px;
+            }
+
+
+            .video-section{
+
+                width:92%;
+
+                padding:20px;
+            }
+
+
+            .video-section h2{
+
+                font-size:24px;
+            }
+
+
+            .video-section p{
+
+                font-size:14px;
+            }
+
+
+            .video-container iframe{
+
+                width:100%;
+
+                height:230px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+<nav>
+
+    <a href="index.html">🏠 Home</a>
+
+    <a href="products.html">🌷 Products</a>
+
+    <a href="gallery.html">🖼️ Gallery</a>
+
+    <a href="contact.html">💌 Contact</a>
+
+    <a href="about.html">🌸 About Us</a>
+
+</nav>
+
+
+<br>
+
+
+<!-- ========================= -->
+<!-- TITLE -->
+<!-- ========================= -->
+
+<h1>
+    🌸 Bloom Haven Gallery 🌸
+</h1>
+
+
+<p class="intro">
+
+    Explore our beautiful collection of flowers,
+    bouquets, and floral arrangements.
+
+</p>
+
+
+<!-- ========================= -->
+<!-- FLOWER GALLERY -->
+<!-- ========================= -->
+
+<div class="gallery-table">
+
+
+    <!-- 1 -->
+
+    <div class="flower-card">
+
+        <img src="images/roses.png">
+
+        <h4>🌹 Roses</h4>
+
+        <p>
+            Elegant roses perfect for expressing
+            love and appreciation.
+        </p>
+
+    </div>
+
+
+    <!-- 2 -->
+
+    <div class="flower-card">
+
+        <img src="images/Daisy.png">
+
+        <h4>🌼 Daisy</h4>
+
+        <p>
+            Bright and cheerful daisies that bring
+            a happy feeling.
+        </p>
+
+    </div>
+
+
+    <!-- 3 -->
+
+    <div class="flower-card">
+
+        <img src="images/tulips.png">
+
+        <h4>🌷 Tulips</h4>
+
+        <p>
+            Colorful tulips perfect for birthdays
+            and celebrations.
+        </p>
+
+    </div>
+
+
+    <!-- 4 -->
+
+    <div class="flower-card">
+
+        <img src="images/lavender.png">
+
+        <h4>💜 Lavender</h4>
+
+        <p>
+            Beautiful lavender flowers with a calm
+            and relaxing appearance.
+        </p>
+
+    </div>
+
+
+    <!-- 5 -->
+
+    <div class="flower-card">
+
+        <img src="images/Dahlia.jpg">
+
+        <h4>🌸 Dahlia</h4>
+
+        <p>
+            A stunning flower known for its
+            beautiful layered petals.
+        </p>
+
+    </div>
+
+
+    <!-- 6 -->
+
+    <div class="flower-card">
+
+        <img src="images/Delphinium.png">
+
+        <h4>💙 Delphinium</h4>
+
+        <p>
+            Lovely blue flowers that add elegance
+            to every bouquet.
+        </p>
+
+    </div>
+
+
+    <!-- 7 -->
+
+    <div class="flower-card">
+
+        <img src="images/orchids.png">
+
+        <h4>🌺 Orchids</h4>
+
+        <p>
+            Elegant orchids perfect for special
+            occasions and gifts.
+        </p>
+
+    </div>
+
+
+    <!-- 8 -->
+
+    <div class="flower-card">
+
+        <img src="images/lily.png">
+
+        <h4>🌸 Lily</h4>
+
+        <p>
+            Fresh and graceful lilies with a
+            beautiful fragrance.
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<!-- ========================= -->
+<!-- PROMOTIONAL VIDEO -->
+<!-- ========================= -->
+
+<div class="video-section">
+
+    <h2>
+        🎥 Bloom Haven Promotional Video
+    </h2>
+
+
+    <p>
+        Discover the beauty of flowers and
+        the inspiration behind our floral arrangements.
+    </p>
+
+
+    <div class="video-container">
+
+        <iframe
+            src="https://bloomheaven.weebly.com"
+            title="Flowers Advertisment"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+    <footer>
+    <p>© 2026 Bloom Haven Flower Shop. All Rights Reserved.</p>
+
+    <p class="developer">
+        Developed by:<br>
+        <strong>Rada,Strawberry</strong><br>
+        Grade 10 - Tagle
+    </p>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bloom Haven Flower Shop - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            background:linear-gradient(
+                135deg,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA,
+                #F6E2BF
+            );
+
+            font-family:Arial,sans-serif;
+            margin:0;
+        }
+
+
+        /* WELCOME */
+
+        .welcome{
+            width:85%;
+            margin:30px auto;
+
+            padding:25px;
+
+            text-align:center;
+
+            background:linear-gradient(
+                135deg,
+                #FFF9F5,
+                #F6C9CB,
+                #BEEAFA
+            );
+
+            border:3px solid #EB9F91;
+
+            border-radius:25px;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.15);
+        }
+
+
+        .welcome h2{
+            color:#9B6AA7;
+            font-size:30px;
+        }
+
+
+        .welcome p{
+            color:#6B5A67;
+            font-size:17px;
+            line-height:1.7;
+        }
+
+
+        /* SLIDESHOW */
+
+        .slider{
+
+            width:90%;
+            max-width:950px;
+
+            height:400px;
+
+            margin:30px auto 0;
+
+            position:relative;
+
+            overflow:hidden;
+
+            border-radius:25px;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.2);
+
+        }
+
+
+        .slides{
+
+            display:none;
+
+            width:100%;
+            height:100%;
+
+        }
+
+
+        .slides img{
+
+            width:100%;
+            height:100%;
+
+            object-fit:cover;
+
+            display:block;
+
+            border-radius:25px;
+
+        }
+
+
+        /* FADE */
+
+        .fade{
+
+            animation:fade 1.2s;
+
+        }
+
+
+        @keyframes fade{
+
+            from{
+                opacity:.4;
+            }
+
+            to{
+                opacity:1;
+            }
+
+        }
+
+
+        /* ARROWS */
+
+        .prev,
+        .next{
+
+            position:absolute;
+
+            top:50%;
+
+            transform:translateY(-50%);
+
+            width:45px;
+            height:45px;
+
+            display:flex;
+
+            align-items:center;
+            justify-content:center;
+
+            background:rgba(255,249,245,.9);
+
+            color:#9B6A78;
+
+            font-size:25px;
+
+            font-weight:bold;
+
+            border-radius:50%;
+
+            cursor:pointer;
+
+            transition:.3s;
+
+            z-index:5;
+
+            text-decoration:none;
+
+        }
+
+
+        .prev{
+            left:15px;
+        }
+
+
+        .next{
+            right:15px;
+        }
+
+
+        .prev:hover,
+        .next:hover{
+
+            background:#EB9F91;
+
+            color:white;
+
+            transform:
+                translateY(-50%)
+                scale(1.1);
+
+        }
+
+
+        /* DOTS */
+
+        .dots{
+
+            text-align:center;
+
+            margin-top:15px;
+
+        }
+
+
+        .dot{
+
+            display:inline-block;
+
+            width:12px;
+            height:12px;
+
+            margin:5px;
+
+            background:#DEC8D0;
+
+            border-radius:50%;
+
+            cursor:pointer;
+
+            transition:.3s;
+
+        }
+
+
+        .dot:hover{
+
+            background:#EB9F91;
+
+            transform:scale(1.2);
+
+        }
+
+
+        .dot.active{
+
+            background:#EB9F91;
+
+        }
+
+
+        /* PHONE */
+
+        @media screen and (max-width:700px){
+
+            .slider{
+
+                width:92%;
+
+                height:230px;
+
+            }
+
+
+            .prev,
+            .next{
+
+                width:35px;
+                height:35px;
+
+                font-size:20px;
+
+            }
+
+
+            .prev{
+                left:8px;
+            }
+
+
+            .next{
+                right:8px;
+            }
+
+
+            .welcome{
+
+                width:80%;
+
+            }
+
+
+            .welcome h2{
+
+                font-size:25px;
+
+            }
+
+        }
+  
+       nav{
+    background:linear-gradient(90deg,#F6C9CB,#DEC8D0,#BEEAFA,#F6E2BF);
+    padding:18px 10px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+nav a{
+    display:inline-block;
+    color:#6B5260;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+
+    margin:5px 8px;
+    padding:11px 20px;
+
+    border-radius:25px;
+
+    transition:0.4s;
+}
+
+nav a:hover{
+    background:#FFF9F5;
+    color:#EB9F91;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 5px 10px rgba(0,0,0,0.15);
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="products.html">🌷 Products</a>
+
+<a href="gallery.html">🖼️ Gallery</a>
+
+<a href="contact.html">💌 Contact</a>
+
+<a href="about.html">🌸 About Us</a>
+
+</nav>
+
+    
+    <div class="logo">
+
+    <img src="images/logo.png"
+         alt="Bloom Haven Flower Shop Logo">
+
+</div>⁹
+
+<br>
+
+
+<!-- BUSINESS NAME -->
+
+<h1 style="
+    text-align:center;
+    color:#C86B7C;
+    font-size:42px;
+">
+
+🌸 Bloom Haven Flower Shop 🌸
+
+</h1>
+
+
+<!-- SLIDESHOW -->
+
+<div class="slider">
+
+
+    <div class="slides fade">
+
+        <img src="images/banner1.jpg">
+
+    </div>
+
+
+    <div class="slides fade">
+
+        <img src="images/banner2.jpg">
+
+    </div>
+
+
+    <div class="slides fade">
+
+        <img src="images/banner3.jpg">
+
+    </div>
+
+
+
+
+    <!-- PREVIOUS -->
+
+    <a
+        class="prev"
+        onclick="plusSlides(-1)"
+    >
+
+        &#10094;
+
+    </a>
+
+
+    <!-- NEXT -->
+
+    <a
+        class="next"
+        onclick="plusSlides(1)"
+    >
+
+        &#10095;
+
+    </a>
+
+
+</div>
+
+
+<!-- DOTS -->
+
+<div class="dots">
+
+    <span
+        class="dot"
+        onclick="currentSlide(1)">
+    </span>
+
+    <span
+        class="dot"
+        onclick="currentSlide(2)">
+    </span>
+
+    <span
+        class="dot"
+        onclick="currentSlide(3)">
+    </span>
+
+</div>
+
+
+<!-- WELCOME -->
+
+<div class="welcome">
+
+    <h2>
+        🌷 Welcome to Bloom Haven! 🌷
+    </h2>
+
+
+    <p>
+
+        Welcome to Bloom Haven Flower Shop,
+        where every flower tells a beautiful story.
+
+    </p>
+
+
+    <p>
+
+        We offer fresh and colorful flowers,
+        elegant bouquets, and beautiful floral
+        arrangements perfect for every occasion.
+
+    </p>
+
+
+    <p>
+
+        From simple gifts to unforgettable
+        celebrations, we are here to make
+        every moment bloom with happiness. 🌸
+
+    </p>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+let slideIndex = 1;
+
+showSlides(slideIndex);
+
+
+function plusSlides(n){
+
+    showSlides(slideIndex += n);
+
+}
+
+
+function currentSlide(n){
+
+    showSlides(slideIndex = n);
+
+}
+
+
+function showSlides(n){
+
+    let i;
+
+    let slides =
+        document.getElementsByClassName("slides");
+
+    let dots =
+        document.getElementsByClassName("dot");
+
+
+    if(n > slides.length){
+
+        slideIndex = 1;
+
+    }
+
+
+    if(n < 1){
+
+        slideIndex = slides.length;
+
+    }
+
+
+    for(i = 0; i < slides.length; i++){
+
+        slides[i].style.display = "none";
+
+    }
+
+
+    for(i = 0; i < dots.length; i++){
+
+        dots[i].className =
+            dots[i].className.replace(" active","");
+
+    }
+
+
+    slides[slideIndex-1].style.display = "block";
+
+    dots[slideIndex-1].className += " active";
+
+}
+
+
+/* AUTOMATIC SLIDESHOW */
+
+setInterval(function(){
+
+    plusSlides(1);
+
+},4000);
+
+</script>
+
+  <footer>
+    <p>© 2026 Bloom Haven Flower Shop. All Rights Reserved.</p>
+
+    <p class="developer">
+        Developed by:<br>
+        <strong>Rada,Strawberry</strong><br>
+        Grade 10 - Tagle
+    </p>
+</footer>  
+    
+    
+</body>
+
+</html>
+
+

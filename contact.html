@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bloom Haven Flower Shop - Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+
+            background:linear-gradient(
+                135deg,
+                #F6E2BF,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA
+            );
+        }
+
+
+        /* NAVIGATION */
+
+        nav{
+            background:linear-gradient(
+                90deg,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA,
+                #F6E2BF
+            );
+
+            padding:18px 10px;
+            text-align:center;
+
+            box-shadow:
+                0 4px 12px
+                rgba(0,0,0,0.15);
+        }
+
+
+        nav a{
+            display:inline-block;
+
+            color:#6B5260;
+            text-decoration:none;
+
+            font-size:17px;
+            font-weight:bold;
+
+            margin:5px 8px;
+            padding:11px 20px;
+
+            border-radius:25px;
+
+            transition:.4s;
+        }
+
+
+        nav a:hover{
+            background:#FFF9F5;
+            color:#EB9F91;
+
+            transform:translateY(-3px);
+
+            box-shadow:
+                0 5px 10px
+                rgba(0,0,0,0.15);
+        }
+
+
+        /* CONTAINER */
+
+        .container{
+            width:70%;
+            margin:40px auto;
+
+            background:linear-gradient(
+                135deg,
+                #FFF8E7,
+                #FCE4EC,
+                #EDE7F6,
+                #E3F2FD
+            );
+
+            padding:30px;
+
+            border-radius:25px;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,.2);
+
+            box-sizing:border-box;
+        }
+
+
+        /* TITLE */
+
+        h1{
+            text-align:center;
+
+            color:#C86B7C;
+
+            font-size:40px;
+
+            text-shadow:
+                2px 2px 5px #F6C9CB;
+        }
+
+
+        /* LABELS */
+
+        label{
+            font-weight:bold;
+            color:#7B1FA2;
+
+            display:block;
+
+            margin-top:10px;
+            margin-bottom:5px;
+        }
+
+
+        /* TEXT INPUTS */
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea{
+
+            width:100%;
+
+            padding:12px;
+
+            margin-bottom:15px;
+
+            border-radius:10px;
+
+            border:2px solid #E8C5D0;
+
+            box-sizing:border-box;
+
+            font-family:Arial,sans-serif;
+
+            font-size:15px;
+
+            background:#FFFDFB;
+        }
+
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus{
+
+            outline:none;
+
+            border-color:#BEEAFA;
+
+            box-shadow:
+                0 0 8px
+                rgba(190,234,250,.8);
+        }
+
+
+        /* MESSAGE */
+
+        textarea{
+
+            height:120px;
+
+            resize:vertical;
+        }
+
+
+        /* RADIO BUTTONS */
+
+        input[type="radio"]{
+
+            width:auto;
+
+            margin:0 7px 10px 0;
+
+            vertical-align:middle;
+
+            accent-color:#AB47BC;
+        }
+
+
+        /* CHECKBOXES */
+
+        input[type="checkbox"]{
+
+            width:auto;
+
+            margin:0 7px 10px 0;
+
+            vertical-align:middle;
+
+            accent-color:#EC407A;
+        }
+
+
+        /* BUTTONS */
+
+        button{
+
+            background:linear-gradient(
+                to right,
+                #EC407A,
+                #AB47BC,
+                #42A5F5
+            );
+
+            color:white;
+
+            border:none;
+
+            padding:12px 25px;
+
+            margin-right:10px;
+
+            border-radius:25px;
+
+            cursor:pointer;
+
+            font-size:16px;
+
+            font-weight:bold;
+
+            transition:.4s;
+        }
+
+
+        button:hover{
+
+            transform:translateY(-3px)
+                       scale(1.03);
+
+            box-shadow:
+                0 6px 12px
+                rgba(0,0,0,.2);
+        }
+
+
+        /* BUSINESS INFORMATION */
+
+        hr{
+
+            border:none;
+
+            border-top:2px solid #E8C5D0;
+
+            margin:35px 0;
+        }
+
+
+        h2{
+
+            color:#9C27B0;
+        }
+
+
+        .business-info p{
+
+            color:#6B5A67;
+
+            font-size:16px;
+
+            line-height:25px;
+        }
+
+
+        .business-info a{
+
+            color:#9C27B0;
+
+            font-weight:bold;
+
+            text-decoration:none;
+        }
+
+
+        .business-info a:hover{
+
+            color:#EC407A;
+
+            text-decoration:underline;
+        }
+
+
+        /* PHONE */
+
+        @media screen and (max-width:700px){
+
+            .container{
+
+                width:92%;
+
+                padding:20px;
+            }
+
+
+            h1{
+
+                font-size:30px;
+            }
+
+
+            nav a{
+
+                font-size:13px;
+
+                padding:9px 11px;
+
+                margin:3px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="products.html">🌷 Products</a>
+
+<a href="gallery.html">🖼️ Gallery</a>
+
+<a href="contact.html">💌 Contact</a>
+
+<a href="about.html">🌸 About Us</a>
+
+</nav>
+
+
+<!-- CONTACT CONTAINER -->
+
+<div class="container">
+
+
+<h1>🌸 Contact Us 🌸</h1>
+
+
+<form>
+
+
+<label>Full Name</label>
+
+<input
+type="text"
+placeholder="Enter your full name"
+>
+
+
+<label>Email Address</label>
+
+<input
+type="email"
+placeholder="Enter your email"
+>
+
+
+<label>Contact Number</label>
+
+<input
+type="tel"
+placeholder="09XXXXXXXXX"
+>
+
+
+<label>Select Product</label>
+
+<select>
+
+<option>Red Rose Bouquet</option>
+
+<option>Pink Tulips Bouquet</option>
+
+<option>Dahlia Bouquet</option>
+
+<option>Pink Lily Bouquet</option>
+
+<option>Pink Orchid Bouquet</option>
+
+<option>White Daisy Bouquet</option>
+
+<option>Delphinium Bouquet</option>
+
+<option>Iris</option>
+
+<option>Lavender Bouquet</option>
+
+</select>
+
+
+<label>Message</label>
+
+<textarea
+placeholder="Type your message here..."
+></textarea>
+
+
+<label>Delivery Method</label>
+
+<input
+type="radio"
+name="delivery"
+>
+Pick-up
+
+<br>
+
+<input
+type="radio"
+name="delivery"
+>
+Delivery
+
+
+<label>Additional Services</label>
+
+<input
+type="checkbox"
+>
+Gift Wrapping
+
+<br>
+
+<input
+type="checkbox"
+>
+Greeting Card
+
+<br>
+
+<input
+type="checkbox"
+>
+Same-Day Delivery
+
+<br><br>
+
+
+<button type="submit">
+Submit
+</button>
+
+<button type="reset">
+Reset
+</button>
+
+
+</form>
+
+
+<hr>
+
+
+<!-- BUSINESS INFORMATION -->
+
+<div class="business-info">
+
+<h2>
+🌸 Business Information
+</h2>
+
+
+<p>
+📍 <b>Address:</b> Cavite, Philippines
+</p>
+
+
+<p>
+📞 <b>Contact Number:</b> 0912-345-6789
+</p>
+
+
+<p>
+📧 <b>Email:</b> bloomhaven@gmail.com
+</p>
+
+
+<p>
+🌐 <b>Facebook:</b>
+<a href="https://facebook.com" target="_blank">
+Bloom Haven Flower Shop
+</a>
+</p>
+
+
+<p>
+📷 <b>Instagram:</b>
+<a href="https://instagram.com" target="_blank">
+@bloomhavenflowers
+</a>
+</p>
+
+</div>
+
+  <div style="text-align:center; padding:20px;">
+
+    <h2 style="color:#C2185B; font-family:Arial;">
+        🌸 Follow Us 🌸
+    </h2>
+
+    <a href="https://www.instagram.com/">
+        <img src="Instagram.jpg" width="50" height="50"
+             style="border-radius:50%; margin:8px;">
+    </a>
+
+    <a href="https://www.facebook.com/">
+        <img src="Facebook.jpg" width="50" height="50"
+             style="border-radius:50%; margin:8px;">
+    </a>
+
+    <a href="mailto:your@gmail.com">
+        <img src="Gmail.jpg" width="50" height="50"
+             style="border-radius:50%; margin:8px;">
+    </a>
+
+    <a href="Location.html">
+        <img src="Location.jpg" width="50" height="50"
+             style="border-radius:50%; margin:8px;">
+    </a>
+
+</div>
+
+</div>
+
+    
+
+<br><br>
+
+    <footer>
+    <p>© 2026 Bloom Haven Flower Shop. All Rights Reserved.</p>
+
+    <p class="developer">
+        Developed by:<br>
+        <strong>Rada,Strawberry</strong><br>
+        Grade 10 - Tagle
+    </p>
+</footer>
+
+</body>
+
+</html>

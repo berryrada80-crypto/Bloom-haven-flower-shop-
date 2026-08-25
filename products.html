@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bloom Haven Flower Shop - Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* BODY */
+
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial,sans-serif;
+
+            background:linear-gradient(
+                135deg,
+                #F6E2BF,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA
+            );
+        }
+
+
+        /* NAVIGATION */
+
+        nav{
+            background:linear-gradient(
+                90deg,
+                #F6C9CB,
+                #DEC8D0,
+                #BEEAFA,
+                #F6E2BF
+            );
+
+            padding:18px 10px;
+
+            text-align:center;
+
+            box-shadow:
+                0 4px 12px
+                rgba(0,0,0,0.15);
+        }
+
+
+        nav a{
+            display:inline-block;
+
+            color:#6B5260;
+
+            text-decoration:none;
+
+            font-size:17px;
+
+            font-weight:bold;
+
+            margin:5px 8px;
+
+            padding:11px 20px;
+
+            border-radius:25px;
+
+            transition:.4s;
+        }
+
+
+        nav a:hover{
+
+            background:#FFF9F5;
+
+            color:#EB9F91;
+
+            transform:translateY(-3px);
+
+            box-shadow:
+                0 5px 10px
+                rgba(0,0,0,.15);
+        }
+
+
+        /* MAIN TITLE */
+
+        h1{
+
+            text-align:center;
+
+            color:#C86B7C;
+
+            font-size:40px;
+
+            text-shadow:
+                2px 2px 5px #F6C9CB;
+        }
+
+
+        /* PRODUCT TABLE */
+
+        .product-table{
+
+            width:90%;
+
+            max-width:1200px;
+
+            margin:30px auto;
+
+            border-spacing:20px;
+
+            table-layout:fixed;
+        }
+
+
+        .product-table td{
+
+            width:33.33%;
+
+            height:440px;
+
+            box-sizing:border-box;
+
+            padding:20px;
+
+            text-align:center;
+
+            vertical-align:top;
+
+            background:linear-gradient(
+                145deg,
+                #FFF9F5,
+                #F6E2BF,
+                #F6C9CB
+            );
+
+            border:3px solid #BEEAFA;
+
+            border-radius:20px;
+
+            box-shadow:
+                0 6px 15px
+                rgba(0,0,0,.15);
+
+            transition:.4s;
+        }
+
+
+        /* HOVER */
+
+        .product-table td:hover{
+
+            transform:
+                translateY(-8px)
+                scale(1.03);
+
+            border:3px solid #EB9F91;
+
+            box-shadow:
+                0 10px 20px
+                rgba(235,159,145,.4);
+        }
+
+
+        /* PRODUCT IMAGE */
+
+        .product-table img{
+
+            width:180px;
+
+            height:180px;
+
+            object-fit:cover;
+
+            border-radius:15px;
+
+            display:block;
+
+            margin:auto;
+        }
+
+
+        /* PRODUCT NAME */
+
+        .product-table h3{
+
+            color:#C86B7C;
+
+            font-size:20px;
+
+            height:25px;
+
+            margin:15px 0 8px;
+        }
+
+
+        /* PRODUCT DESCRIPTION */
+
+        .product-table p{
+
+            color:#6B5A67;
+
+            font-size:15px;
+
+            line-height:22px;
+
+            height:55px;
+
+            margin:10px 0;
+        }
+
+
+        /* PRICE */
+
+        .product-table b{
+
+            color:#EB9F91;
+
+            font-size:20px;
+        }
+
+
+        /* ORDER BUTTON */
+
+        button{
+
+            background:linear-gradient(
+                to right,
+                #EB9F91,
+                #F6C9CB,
+                #BEEAFA
+            );
+
+            color:#5D4A57;
+
+            border:none;
+
+            padding:10px 20px;
+
+            border-radius:30px;
+
+            font-weight:bold;
+
+            cursor:pointer;
+
+            transition:.4s;
+        }
+
+
+        button:hover{
+
+            background:linear-gradient(
+                to right,
+                #BEEAFA,
+                #F6C9CB,
+                #F6E2BF
+            );
+
+            transform:scale(1.05);
+        }
+
+
+        /* PRICE LIST TITLE */
+
+        .price-title{
+
+            text-align:center;
+
+            color:#9B6AA7;
+
+            font-size:30px;
+        }
+
+
+        /* PRICE LIST */
+
+        .price-table{
+
+            width:70%;
+
+            max-width:700px;
+
+            margin:auto;
+
+            border-collapse:collapse;
+
+            overflow:hidden;
+
+            border-radius:15px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(0,0,0,.2);
+        }
+
+
+        .price-table th{
+
+            background:linear-gradient(
+                to right,
+                #EB9F91,
+                #DEC8D0,
+                #BEEAFA
+            );
+
+            color:white;
+
+            padding:15px;
+
+            font-size:17px;
+        }
+
+
+        .price-table td{
+
+            background:#FFF9F5;
+
+            color:#6B5A67;
+
+            padding:12px;
+
+            border:1px solid #DEC8D0;
+
+            text-align:center;
+        }
+
+
+        .price-table tr:hover td{
+
+            background:#F6C9CB;
+        }
+
+
+        /* PHONE */
+
+        @media screen and (max-width:700px){
+
+            nav a{
+
+                font-size:13px;
+
+                padding:9px 11px;
+
+                margin:3px;
+            }
+
+
+            .product-table{
+
+                width:96%;
+
+                border-spacing:8px;
+            }
+
+
+            .product-table td{
+
+                height:350px;
+
+                padding:10px;
+            }
+
+
+            .product-table img{
+
+                width:100%;
+
+                height:130px;
+            }
+
+
+            .product-table h3{
+
+                font-size:15px;
+
+                height:20px;
+            }
+
+
+            .product-table p{
+
+                font-size:12px;
+
+                line-height:17px;
+
+                height:50px;
+            }
+
+
+            .product-table b{
+
+                font-size:16px;
+            }
+
+
+            button{
+
+                padding:8px 12px;
+
+                font-size:12px;
+            }
+
+
+            h1{
+
+                font-size:30px;
+            }
+
+
+            .price-table{
+
+                width:90%;
+            }
+
+        }
+  
+   button{
+    background:linear-gradient(
+        to right,
+        #EB9F91,
+        #F6C9CB,
+        #BEEAFA
+    );
+
+    color:#5D4A57;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    animation:floatButton 2s ease-in-out infinite;
+}
+
+
+/* MOVING ORDER BUTTON */
+
+@keyframes floatButton{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+/* HOVER */
+
+button:hover{
+
+    background:linear-gradient(
+        to right,
+        #BEEAFA,
+        #F6C9CB,
+        #F6E2BF
+    );
+
+    transform:scale(1.12);
+
+    box-shadow:
+        0 6px 15px
+        rgba(235,159,145,.4);
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="products.html">🌷 Products</a>
+
+<a href="gallery.html">🖼️ Gallery</a>
+
+<a href="contact.html">💌 Contact</a>
+
+<a href="about.html">🌸 About Us</a>
+
+</nav>
+
+
+<br>
+
+
+<!-- TITLE -->
+
+<h1>
+🌸 Our Flower Collection 🌸
+</h1>
+
+
+<!-- ========================= -->
+<!-- PRODUCTS -->
+<!-- ========================= -->
+
+<table class="product-table">
+
+
+<!-- ROW 1 -->
+
+<tr>
+
+<td>
+
+<img src="images/roses.png">
+
+<h3>Red Rose Bouquet</h3>
+
+<p>
+Perfect for expressing love and romance.
+</p>
+
+<b>₱850</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/tulips.png">
+
+<h3>Pink Tulips</h3>
+
+<p>
+Elegant tulips for every celebration.
+</p>
+
+<b>₱750</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/Dahlia.jpg">
+
+<h3>Dahlia Bouquet</h3>
+
+<p>
+Bright flowers that bring happiness.
+</p>
+
+<b>₱680</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+</tr>
+
+
+<!-- ROW 2 -->
+
+<tr>
+
+<td>
+
+<img src="images/Lily.png">
+
+<h3>Pink Lily Bouquet</h3>
+
+<p>
+Fresh lilies with a lovely fragrance.
+</p>
+
+<b>₱780</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/orchids.png">
+
+<h3>Pink Orchid Bouquet</h3>
+
+<p>
+Elegant orchids for special occasions.
+</p>
+
+<b>₱950</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/Daisy.png">
+
+<h3>White Daisy Bouquet</h3>
+
+<p>
+Simple flowers full of beauty.
+</p>
+
+<b>₱600</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+</tr>
+
+
+<!-- ROW 3 -->
+
+<tr>
+
+<td>
+
+<img src="images/Delphinium.png">
+
+<h3>Delphinium Bouquet</h3>
+
+<p>
+A symbol of admiration and gratitude.
+</p>
+
+<b>₱650</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/iris.png">
+
+<h3>Iris Bouquet</h3>
+
+<p>
+Beautiful blooms for elegant gifts.
+</p>
+
+<b>₱980</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+
+<td>
+
+<img src="images/lavender.png">
+
+<h3>Lavender Bouquet</h3>
+
+<p>
+Relaxing flowers with a calming scent.
+</p>
+
+<b>₱720</b>
+
+<br><br>
+
+<a href="contact.html">
+<button>Order Now</button>
+</a>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+<br>
+
+    
+<footer>
+    <p>© 2026 Bloom Haven Flower Shop. All Rights Reserved.</p>
+
+    <p class="developer">
+        Developed by:<br>
+        <strong>Rada,Strawberry</strong><br>
+        Grade 10 - Tagle
+    </p>
+</footer>
+
+
+</body>
+
+</html>

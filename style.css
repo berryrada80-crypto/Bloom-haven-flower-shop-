@@ -1,0 +1,1403 @@
+/* =====================================================
+   🌸 BLOOM HAVEN FLOWER SHOP
+   🌸 COMPLETE STYLE.CSS
+===================================================== */
+
+
+/* =====================================================
+   🌷 GENERAL WEBSITE
+===================================================== */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:Arial,sans-serif;
+
+    color:#6B5A67;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F6E2BF,
+            #F6C9CB,
+            #DEC8D0,
+            #BEEAFA
+        );
+
+}
+
+
+/* =====================================================
+   🌸 NAVIGATION
+===================================================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    padding:15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #F6C9CB,
+            #DEC8D0,
+            #BEEAFA,
+            #F6E2BF
+        );
+
+    box-shadow:
+        0 4px 12px
+        rgba(0,0,0,.15);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+/* NAVIGATION LINKS */
+
+nav a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#7B5260;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    background:#FFF9F5;
+
+    border:2px solid #EB9F91;
+
+    transition:.35s ease;
+
+}
+
+
+/* NAVIGATION HOVER */
+
+nav a:hover{
+
+    background:#EB9F91;
+
+    color:white;
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+
+    box-shadow:
+        0 5px 12px
+        rgba(235,159,145,.4);
+
+}
+
+
+/* =====================================================
+   🌸 HEADINGS
+===================================================== */
+
+h1{
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    text-align:center;
+
+    color:#C86B7C;
+
+    font-size:40px;
+
+    text-shadow:
+        2px 2px 5px
+        #F6C9CB;
+
+}
+
+
+h2{
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+}
+
+
+/* =====================================================
+   💕 INTRO TEXT
+===================================================== */
+
+.intro{
+
+    text-align:center;
+
+    color:#6B5A67;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    padding:
+        0 20px;
+
+}
+
+
+/* =====================================================
+   🎀 GENERAL BUTTON
+===================================================== */
+
+button{
+
+    background:
+        linear-gradient(
+            90deg,
+            #EB9F91,
+            #F6C9CB,
+            #BEEAFA
+        );
+
+    color:#5D4A57;
+
+    border:2px solid #FFFFFF;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 5px 12px
+        rgba(107,82,96,.18);
+
+    transition:.35s ease;
+
+}
+
+
+button:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.07);
+
+    box-shadow:
+        0 8px 18px
+        rgba(235,159,145,.35);
+
+}
+
+
+/* =====================================================
+   🖼️ IMAGES
+===================================================== */
+
+img{
+
+    max-width:100%;
+
+}
+
+
+/* =====================================================
+   🌸 LOGO
+===================================================== */
+
+.logo{
+
+    text-align:center;
+
+    margin:25px auto;
+
+}
+
+
+.logo img{
+
+    width:200px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #EB9F91;
+
+    box-shadow:
+
+        0 6px 15px
+        rgba(0,0,0,.2),
+
+        0 0 20px
+        rgba(235,159,145,.25);
+
+    transition:.4s;
+
+}
+
+
+.logo img:hover{
+
+    transform:
+        scale(1.08)
+        rotate(3deg);
+
+    box-shadow:
+
+        0 10px 20px
+        rgba(235,159,145,.4),
+
+        0 0 30px
+        rgba(190,234,250,.4);
+
+}
+
+
+/* =====================================================
+   🌸 PRODUCT TABLE
+===================================================== */
+
+.product-table{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:
+        35px auto 70px;
+
+    border-spacing:20px;
+
+    table-layout:fixed;
+
+}
+
+
+/* =====================================================
+   💐 BONGGANG PRODUCT BOX
+===================================================== */
+
+.product-table td{
+
+    position:relative;
+
+    width:33.33%;
+
+    height:440px;
+
+    box-sizing:border-box;
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    vertical-align:top;
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    border:
+        3px solid
+        rgba(255,255,255,.9);
+
+
+    /* 🌸 MULTI-LAYER BACKGROUND */
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,255,255,.95),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(190,234,250,.45),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 8% 90%,
+            rgba(246,201,203,.35),
+            transparent 20%
+        ),
+
+        linear-gradient(
+            145deg,
+            #FFFFFF,
+            #FFF7F1,
+            #FCE3E7,
+            #EAF8FC
+        );
+
+
+    /* ✨ LAYERED SHADOW */
+
+    box-shadow:
+
+        0 8px 15px
+        rgba(107,82,96,.15),
+
+        0 18px 35px
+        rgba(107,82,96,.14),
+
+        0 0 0 2px
+        rgba(235,159,145,.18),
+
+        inset 0 0 25px
+        rgba(255,255,255,.9);
+
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease,
+
+        border-color .45s ease;
+
+}
+
+
+/* =====================================================
+   ✨ INNER DECORATIVE BORDER
+===================================================== */
+
+.product-table td::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:9px;
+
+    border:
+        2px solid
+        rgba(235,159,145,.30);
+
+    border-radius:25px;
+
+    pointer-events:none;
+
+    z-index:1;
+
+    transition:.45s;
+
+}
+
+
+/* =====================================================
+   🌸 FLOWER DECORATION
+===================================================== */
+
+.product-table td::after{
+
+    content:"✿";
+
+    position:absolute;
+
+    top:8px;
+
+    right:15px;
+
+    color:#EB9F91;
+
+    font-size:32px;
+
+    opacity:.45;
+
+    text-shadow:
+        0 3px 8px
+        rgba(235,159,145,.35);
+
+    pointer-events:none;
+
+    z-index:2;
+
+    transition:.5s;
+
+}
+
+
+/* =====================================================
+   💎 PRODUCT BOX HOVER
+===================================================== */
+
+.product-table td:hover{
+
+    transform:
+        translateY(-15px)
+        scale(1.035);
+
+    border-color:#EB9F91;
+
+    box-shadow:
+
+        0 12px 20px
+        rgba(107,82,96,.15),
+
+        0 25px 45px
+        rgba(107,82,96,.20),
+
+        0 0 25px
+        rgba(235,159,145,.40),
+
+        0 0 45px
+        rgba(190,234,250,.30),
+
+        inset 0 0 25px
+        rgba(255,255,255,.95);
+
+}
+
+
+/* =====================================================
+   ✨ INNER BORDER HOVER
+===================================================== */
+
+.product-table td:hover::before{
+
+    inset:5px;
+
+    border-color:
+        rgba(235,159,145,.65);
+
+    box-shadow:
+        0 0 15px
+        rgba(235,159,145,.25);
+
+}
+
+
+/* =====================================================
+   🌸 FLOWER HOVER
+===================================================== */
+
+.product-table td:hover::after{
+
+    transform:
+        rotate(25deg)
+        scale(1.35);
+
+    opacity:.9;
+
+}
+
+
+/* =====================================================
+   🌷 PRODUCT IMAGE
+===================================================== */
+
+.product-table img{
+
+    position:relative;
+
+    z-index:3;
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:
+        5px auto 15px;
+
+    border-radius:25px;
+
+    border:
+        6px solid #FFFFFF;
+
+    box-shadow:
+
+        0 6px 12px
+        rgba(107,82,96,.15),
+
+        0 12px 25px
+        rgba(107,82,96,.12),
+
+        0 0 15px
+        rgba(235,159,145,.18);
+
+    transition:.5s;
+
+}
+
+
+/* IMAGE HOVER */
+
+.product-table td:hover img{
+
+    transform:
+        scale(1.08)
+        rotate(2deg);
+
+    box-shadow:
+
+        0 8px 15px
+        rgba(107,82,96,.18),
+
+        0 15px 30px
+        rgba(235,159,145,.30),
+
+        0 0 20px
+        rgba(190,234,250,.35);
+
+}
+
+
+/* =====================================================
+   🌸 PRODUCT NAME
+===================================================== */
+
+.product-table h3{
+
+    position:relative;
+
+    z-index:3;
+
+    color:#C86B7C;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:20px;
+
+    height:25px;
+
+    margin:
+        12px 0 18px;
+
+    text-shadow:
+        1px 2px 3px
+        rgba(200,107,124,.20);
+
+}
+
+
+/* =====================================================
+   ✨ LINE UNDER PRODUCT NAME
+===================================================== */
+
+.product-table h3::after{
+
+    content:"";
+
+    display:block;
+
+    width:55px;
+
+    height:3px;
+
+    margin:8px auto;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            to right,
+            #EB9F91,
+            #F6C9CB,
+            #BEEAFA
+        );
+
+    box-shadow:
+        0 2px 5px
+        rgba(235,159,145,.25);
+
+}
+
+
+/* =====================================================
+   💐 PRODUCT DESCRIPTION
+===================================================== */
+
+.product-table p{
+
+    position:relative;
+
+    z-index:3;
+
+    color:#6B5A67;
+
+    font-size:15px;
+
+    line-height:22px;
+
+    height:55px;
+
+    margin:15px 0;
+
+}
+
+
+/* =====================================================
+   💰 PRICE
+===================================================== */
+
+.product-table b{
+
+    position:relative;
+
+    z-index:4;
+
+    display:inline-block;
+
+    color:#C86B7C;
+
+    font-size:21px;
+
+    padding:7px 17px;
+
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFFFFF,
+            #FFF7F1,
+            #FCE3E7
+        );
+
+    border:
+        2px solid
+        rgba(235,159,145,.25);
+
+    box-shadow:
+
+        0 4px 10px
+        rgba(107,82,96,.12),
+
+        inset 0 0 8px
+        rgba(235,159,145,.10);
+
+    transition:.35s;
+
+}
+
+
+/* PRICE HOVER */
+
+.product-table td:hover b{
+
+    transform:scale(1.1);
+
+    box-shadow:
+
+        0 6px 14px
+        rgba(235,159,145,.25),
+
+        0 0 15px
+        rgba(235,159,145,.18);
+
+}
+
+
+/* =====================================================
+   🎀 ORDER BUTTON
+===================================================== */
+
+.product-table button{
+
+    position:relative;
+
+    z-index:4;
+
+    margin-top:3px;
+
+    padding:11px 24px;
+
+    border:
+        2px solid #FFFFFF;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #EB9F91,
+            #F6C9CB,
+            #BEEAFA
+        );
+
+    color:#5D4A57;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+
+        0 5px 12px
+        rgba(107,82,96,.18),
+
+        0 0 10px
+        rgba(235,159,145,.12);
+
+    transition:.35s;
+
+}
+
+
+/* BUTTON HOVER */
+
+.product-table button:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.1);
+
+    box-shadow:
+
+        0 8px 18px
+        rgba(107,82,96,.22),
+
+        0 0 22px
+        rgba(235,159,145,.35);
+
+    background:
+        linear-gradient(
+            90deg,
+            #BEEAFA,
+            #F6C9CB,
+            #F6E2BF
+        );
+
+}
+
+
+/* =====================================================
+   ✨ PRODUCT CARD GLOW
+===================================================== */
+
+.product-table td:hover{
+
+    animation:
+        cardGlow 1.8s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes cardGlow{
+
+    from{
+
+        box-shadow:
+
+            0 12px 20px
+            rgba(107,82,96,.15),
+
+            0 25px 45px
+            rgba(107,82,96,.18),
+
+            0 0 20px
+            rgba(235,159,145,.25);
+
+    }
+
+    to{
+
+        box-shadow:
+
+            0 15px 25px
+            rgba(107,82,96,.18),
+
+            0 28px 50px
+            rgba(107,82,96,.22),
+
+            0 0 32px
+            rgba(235,159,145,.42);
+
+    }
+
+}
+
+
+/* =====================================================
+   🌸 GALLERY TABLE
+===================================================== */
+
+.gallery-table{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:30px auto;
+
+    border-spacing:20px;
+
+    table-layout:fixed;
+
+}
+
+
+.gallery-table td{
+
+    width:33.33%;
+
+    vertical-align:top;
+
+    padding:0;
+
+}
+
+
+/* =====================================================
+   🌷 FLOWER CARD
+===================================================== */
+
+.flower-card{
+
+    height:430px;
+
+    box-sizing:border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF9F5,
+            #F6E2BF,
+            #F6C9CB,
+            #BEEAFA
+        );
+
+    border-radius:25px;
+
+    padding:15px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 8px 20px
+        rgba(107,82,96,.18);
+
+    transition:.4s;
+
+    overflow:hidden;
+
+}
+
+
+.flower-card:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    box-shadow:
+
+        0 15px 30px
+        rgba(107,82,96,.25),
+
+        0 0 25px
+        rgba(235,159,145,.25);
+
+}
+
+
+/* =====================================================
+   📱 RESPONSIVE DESIGN
+===================================================== */
+
+@media screen and (max-width:700px){
+
+
+    /* NAV */
+
+    nav{
+
+        gap:6px;
+
+        padding:10px;
+
+    }
+
+
+    nav a{
+
+        font-size:13px;
+
+        padding:8px 10px;
+
+    }
+
+
+    /* TITLE */
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+
+    .intro{
+
+        font-size:15px;
+
+    }
+
+
+    /* PRODUCT TABLE */
+
+    .product-table{
+
+        width:96%;
+
+        border-spacing:8px;
+
+    }
+
+
+    .product-table td{
+
+        height:350px;
+
+        padding:10px;
+
+        border-radius:16px;
+
+    }
+
+
+    /* INNER BORDER */
+
+    .product-table td::before{
+
+        inset:5px;
+
+        border-radius:12px;
+
+        border-width:1px;
+
+    }
+
+
+    /* FLOWER */
+
+    .product-table td::after{
+
+        font-size:18px;
+
+        top:5px;
+
+        right:6px;
+
+    }
+
+
+    /* IMAGE */
+
+    .product-table img{
+
+        width:100%;
+
+        height:130px;
+
+        border-width:4px;
+
+        border-radius:15px;
+
+    }
+
+
+    /* NAME */
+
+    .product-table h3{
+
+        font-size:15px;
+
+        height:20px;
+
+        margin:
+            8px 0 13px;
+
+    }
+
+
+    .product-table h3::after{
+
+        width:30px;
+
+        height:2px;
+
+        margin:5px auto;
+
+    }
+
+
+    /* DESCRIPTION */
+
+    .product-table p{
+
+        font-size:12px;
+
+        line-height:17px;
+
+        height:50px;
+
+        margin:10px 0;
+
+    }
+
+
+    /* PRICE */
+
+    .product-table b{
+
+        font-size:15px;
+
+        padding:5px 9px;
+
+    }
+
+
+    /* BUTTON */
+
+    .product-table button{
+
+        padding:8px 12px;
+
+        font-size:11px;
+
+    }
+
+
+    /* LOGO */
+
+    .logo img{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+
+}
+
+
+/* =========================
+   BLOOM HAVEN PRODUCT BOXES
+========================= */
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 35px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        #fffefe,
+        #fff7fa
+    );
+
+    padding: 25px;
+    text-align: center;
+
+    border: 3px solid #d8a8bd;
+    border-radius: 28px;
+
+    /* Inner decorative line */
+    box-shadow:
+        0 0 0 6px #fffefe,
+        0 0 0 8px #ead4df,
+        0 12px 30px rgba(107, 90, 103, 0.15);
+
+    transition: all 0.35s ease;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   FLORAL DECORATIONS
+========================= */
+
+.product-card::before {
+    content: "✿";
+    position: absolute;
+
+    top: 8px;
+    left: 12px;
+
+    font-size: 28px;
+    color: #d29bb3;
+
+    opacity: 0.75;
+}
+
+.product-card::after {
+    content: "❀";
+    position: absolute;
+
+    bottom: 8px;
+    right: 12px;
+
+    font-size: 27px;
+    color: #b9a5c8;
+
+    opacity: 0.75;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    border-color: #b97898;
+
+    box-shadow:
+        0 0 0 6px #fffefe,
+        0 0 0 8px #d8a8bd,
+        0 18px 35px rgba(107, 90, 103, 0.22);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 2px solid #ead4df;
+
+    margin-bottom: 15px;
+
+    transition: transform 0.35s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   PRODUCT NAME
+========================= */
+
+.product-card h3 {
+    color: #6b5a67;
+
+    font-size: 22px;
+
+    margin: 10px 0 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PRODUCT DESCRIPTION
+========================= */
+
+.product-card p {
+    color: #8b7783;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin: 8px 0;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.product-card .price {
+    color: #b56583;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.product-card button {
+    background: linear-gradient(
+        135deg,
+        #c9829f,
+        #a96584
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 24px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+    transform: scale(1.06);
+
+    box-shadow: 0 5px 12px rgba(107, 90, 103, 0.2);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .products-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+
+}
+
+<div class="video-container">
+
+    <iframe
+        src=https://bloomheaven.weebly.com
+        title="Bloom Heaven Promotional Video"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+.video-container {
+    width: 90%;
+    max-width: 200px;
+    margin: 15px auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#F8EAF0;
+    color:#6B5A67;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+    border-top:2px solid #E8C8D6;
+}
+
+footer p{
+    margin:0;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* =========================
+   DEVELOPER FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+    background:linear-gradient(135deg,#f8dce8,#f3c6d9);
+    color:#6B5A67;
+    border-top:3px solid #d98aaa;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+footer .developer{
+    margin-top:15px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+footer .developer strong{
+    font-size:16px;
+    color:#9b5575;
+}
